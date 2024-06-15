@@ -3,11 +3,12 @@
 在开始前，我们先理清以下概念：
 
 - Java：Java 编程语言。
-    - Java 源文件：指使用 Java 编写的文件。文件后缀名是`.java`。
+    - Java 源文件：使用 Java 编写的文件。文件后缀名是`.java`。
 - JVM：Java 虚拟机（Java Virtual Machine），可运行字节码文件。
-    - 字节码：指 [JVM Specification](https://docs.oracle.com/javase/specs/jvms/se22/html/index.html)
+    - 字节码：[JVM Specification](https://docs.oracle.com/javase/specs/jvms/se22/html/index.html)
       规定的一系列指令，用单个或多个字节（Byte）表示。
 - JDK：Java 开发包（Java Development Kit），包含 Java 的编译器和运行时。
+    - 编译器：把 Java 源文件转换为字节码文件。字节码文件的后缀名是`.class`。
 - JRE：Java 运行时环境（Java Runtime Environment），现已不可单独下载，可用`jlink`程序自行制作。
 
 Java 与 JVM 无直接关系。JVM 能运行任何规范的字节码文件。

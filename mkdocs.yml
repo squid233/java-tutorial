@@ -13,7 +13,10 @@ nav:
     - basic/setup.md
     - basic/jshell.md
     - 表达式:
-        - 整数: basic/exp/integer.md
+        - basic/exp/integer.md
+        - basic/exp/floating_point.md
+  - 附录:
+    - 关于: about.md
 
 validation:
   omitted_files: warn
@@ -24,9 +27,13 @@ validation:
 theme:
   name: readthedocs
   locale: zh_CN
+  custom_dir: custom_theme/
 
 markdown_extensions:
   - admonition
   - toc:
       permalink: "#"
       slugify: !!python/name:markdown.extensions.toc.slugify_unicode
+
+watch:
+  - custom_theme

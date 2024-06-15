@@ -1,0 +1,32 @@
+site_name: Java 循序渐进
+site_url: https://squid233.github.io/java-tutorial/
+repo_url: https://github.com/squid233/java-tutorial/
+edit_uri: blob/main/docs/
+site_description: 本书将教你学会 Java 的基本语法和功能。
+site_author: squid233
+copyright: Copyright © 2024 squid233. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noreferrer noopener">CC BY-NC-SA 4.0</a>.
+
+nav:
+  - 前言: index.md
+  - 第一章：基础知识:
+    - basic/index.md
+    - basic/setup.md
+    - basic/jshell.md
+    - 表达式:
+        - 整数: basic/exp/integer.md
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+theme:
+  name: readthedocs
+  locale: zh_CN
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: "#"
+      slugify: !!python/name:markdown.extensions.toc.slugify_unicode

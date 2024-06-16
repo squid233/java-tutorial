@@ -56,3 +56,18 @@ void main() {
     System.out.println(s);
 }
 ```
+
+## 注释
+
+用`//`或`/**/`添加注释。
+
+```java
+/**
+ * Javadoc! 给方法用的注释
+ */
+void main() {
+    // println
+    System.out.println("Hello world"); // 语句
+    /* 块注释 */
+}
+```

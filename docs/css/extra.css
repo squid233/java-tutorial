@@ -1,0 +1,12 @@
+figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+figcaption {
+    font-size: small;
+    color: gray;
+}

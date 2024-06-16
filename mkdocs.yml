@@ -20,15 +20,10 @@ nav:
     - basic/variable.md
     - basic/array.md
     - basic/method.md
-    - 源文件:
-        - basic/source_file/ide.md
+    - basic/ide.md
+    - basic/source_file.md
   - 附录:
     - 关于: about.md
-
-draft_docs: |
-  array.md
-  method.md
-  ide.md
 
 validation:
   omitted_files: warn
@@ -40,6 +35,9 @@ theme:
   name: readthedocs
   locale: zh_CN
   custom_dir: custom_theme/
+
+extra_css:
+  - css/extra.css
 
 markdown_extensions:
   - admonition

@@ -17,8 +17,7 @@ Java 与 JVM 无直接关系。JVM 能运行任何规范的字节码文件。
 
 ## 下载 JDK
 
-JDK 根据供应商不同分为 Oracle JDK 和 OpenJDK，由 Oracle 发布的称为 Oracle JDK；
-其他供应商则基于 OpenJDK 开发了自己的版本。
+JDK 根据供应商不同分为 Oracle JDK 和 OpenJDK，由 Oracle 发布的称为 Oracle JDK；其他供应商则基于 OpenJDK 开发了自己的版本。
 
 OpenJDK 的供应商可在 [SDKMAN!](https://sdkman.io/jdks) 找到。
 
@@ -26,7 +25,7 @@ OpenJDK 的供应商可在 [SDKMAN!](https://sdkman.io/jdks) 找到。
 
 一般下载到的都是压缩包，解压后还需要配置环境变量。
 
-根据自己的操作系统配置。
+根据自己的操作系统配置，把`JAVA_HOME`设置为解压到的路径，该路径下应有`bin`、`lib`等文件夹。
 
 !!! tip "以 Windows 10 为例"
     1. 右击开始按钮，点击设置→系统→关于→高级系统设置→环境变量。
@@ -39,8 +38,7 @@ OpenJDK 的供应商可在 [SDKMAN!](https://sdkman.io/jdks) 找到。
 
 ## 测试
 
-启动终端，运行`javac --version`。输出类似`javac 22`的内容时，说明配置成功了。
-如果提示找不到文件，请检查环境变量是否正确配置。
+启动终端，运行`javac --version`。输出类似`javac 22`的内容时，说明配置成功了。如果提示找不到文件，请检查环境变量是否正确配置。
 
 !!! tip "Windows 10 的终端"
     1. 右击开始菜单。

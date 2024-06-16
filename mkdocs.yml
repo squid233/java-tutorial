@@ -15,6 +15,8 @@ nav:
     - 表达式:
         - basic/exp/integer.md
         - basic/exp/floating_point.md
+        - basic/exp/string.md
+        - basic/exp/boolean.md
   - 附录:
     - 关于: about.md
 

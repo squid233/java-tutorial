@@ -17,8 +17,18 @@ nav:
         - basic/exp/floating_point.md
         - basic/exp/string.md
         - basic/exp/boolean.md
+    - basic/variable.md
+    - basic/array.md
+    - basic/method.md
+    - 源文件:
+        - basic/source_file/ide.md
   - 附录:
     - 关于: about.md
+
+draft_docs: |
+  array.md
+  method.md
+  ide.md
 
 validation:
   omitted_files: warn

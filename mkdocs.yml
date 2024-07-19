@@ -44,6 +44,9 @@ markdown_extensions:
   - toc:
       permalink: "#"
       slugify: !!python/name:markdown.extensions.toc.slugify_unicode
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.details
+  - pymdownx.tilde
 
 watch:
   - custom_theme

@@ -26,17 +26,17 @@
 
 ## 项目结构
 
-创建了项目后，我们会发现左方有多个文件。用`src`文件夹存放源码。
+创建了项目后，我们会发现左方有多个文件。其中，`src`文件夹存放源码；`.gitignore`与 Java 关系不大；`.idea`文件夹和`my_project.iml`则是项目的配置文件。
 
 ![project-structure](img/project_structure.png)
 
 ## 设置预览功能
 
-我们将使用预览功能。在右上角找到齿轮，打开`Project Structure`，设置`Language Level`为`22 (Preview)`。
+我们将在本书中使用预览功能。在右上角找到齿轮，打开`Project Structure`，设置`Language Level`为`22 (Preview)`。
 
 ## 自动补全
 
-自动补全是最重要的功能。IntelliJ IDEA 支持自动补全，输入标识符中各单词（的首字母）会显示多个候选项。按`Enter`插入候选项，按`Tab`替换为候选项。
+自动补全是 IDE 中最重要的功能。IntelliJ IDEA 支持自动补全，输入标识符中各单词（的首字母）会显示多个候选项。按`Enter`插入候选项，按`Tab`替换为候选项。
 
 ![auto-completion](img/auto_completion.png)
 

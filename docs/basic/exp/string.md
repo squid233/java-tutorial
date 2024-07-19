@@ -63,5 +63,7 @@ string"""
 
 字符串模板曾在 Java 21 和 22 中预览，但在 23 中移除了。本书不讲解。
 
-!!! tip "你知道吗"
-    Java 22 中的字符串模板长这样：`STR."Hello Java \{22} world"`
+/// admonition | 你知道吗
+    type: tip
+Java 22 中的字符串模板长这样：`STR."Hello Java \{22} world"`
+///

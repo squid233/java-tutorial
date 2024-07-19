@@ -21,7 +21,7 @@ void main() {
 }
 ```
 
-这时调用主方法没有任何意义，因为它创建的`s`变量不会自动输出。怎样在终端显示我们想要的内容呢？使用`System.out.println`方法。
+这时调用主方法没有任何意义，因为它创建的`s`变量不会自动输出。要在终端显示我们想要的内容，就需要使用`System.out.println`方法。
 
 `println`允许输出参数并自动换行；类似地，`print`允许输出参数且不换行。
 
@@ -39,6 +39,18 @@ void main() {
 运行程序，得到结果`Hello world`。
 
 右上角会多出一个配置，我们点击三角形就能运行。
+
+## 程序参数
+
+为了给我们的程序传入参数，我们需要给主方法添加`String[]`参数。我们能按照普通数组的操作方式读取参数。
+
+```java
+void main(String[] args) {
+    System.out.println("Hello " + args[0]);
+}
+```
+
+这时，我们需要点击右上角的`HelloWorld`，选择`Edit Configurations...`，并在`Program arguments`中填入我们需要的参数。有空格需要用半角双引号包围。完成后运行即可。
 
 ## 全局变量
 
@@ -62,9 +74,6 @@ void main() {
 用`//`或`/**/`添加注释。
 
 ```java
-/**
- * Javadoc! 给方法用的注释
- */
 void main() {
     // println
     System.out.println("Hello world"); // 语句

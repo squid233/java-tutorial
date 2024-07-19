@@ -42,14 +42,16 @@ Java 支持四则运算，即加减乘除，其运算顺序为先乘除、后加
 -127    = 0b 1000 0001
 ```
 
-!!! note
-    本书不讲解二进制的四则运算。
+/// admonition | 注意
+    type: note
+本书不讲解二进制的四则运算。
+///
 
 简单来说，请看下图：
 
 ![int-circle](https://mermaid.ink/svg/pako:eNo9TjFuhDAQ_Ara2iDD2hhcXJV0lybpIjcWmAMJ45PPKLkg_h7H3GWL2R3tzGg26FxvQMIwu69u1D5k53e1ZHFoluenrExYJczxWA92vCgQsMZbPfUxZvvzKgijsUaBjGdvBr3OQYFa9ihdr70O5rWfgvMgBz3fDAG9BvdxXzqQwa_mKXqZ9MVr-68yyfR29E21CVz18umcfRojBbnBN8iyZgW2LeOMljU2vKwJ3EFihQVnoqZVhbXgjImdwE9KoAVvGKIQgrbYNAKRgHfrZXwU2H8BuM1WbQ)
 
-上图中，把整数的取值范围排成一个圆。给定一个数为2，加1时向右移一位溢出，变为-3。其他类型的整数同理。
+上图把整数的取值范围排成一个圆。给定一个数为2，加1时向右移一位溢出，变为-3。其他类型的整数同理。
 
 ### 除零
 
@@ -83,8 +85,10 @@ Java 支持四则运算，即加减乘除，其运算顺序为先乘除、后加
 ~9      = -10   = 0b11111111111111111111111111110110
 ```
 
-!!! note
-    关于为什么-8和-10的结果这么长，请自行在网络上搜索关键词`补码`。
+/// admonition | 注意
+    type: note
+观察-8和-10的二进制格式，发现其数字较长。在网络上搜索关键词`补码`可了解更多信息。
+///
 
 ## 整数的其他写法
 

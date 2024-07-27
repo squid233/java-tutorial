@@ -71,12 +71,12 @@ void main() {
 
 ## 注释
 
-用`//`或`/**/`添加注释。
+Java 支持行注释和块注释。用`//`或`/**/`添加注释。块注释不支持嵌套。
 
 ```java
 void main() {
-    // println
-    System.out.println("Hello world"); // 语句
+    // 行注释
     /* 块注释 */
+    System.out.println("Hello world");
 }
 ```

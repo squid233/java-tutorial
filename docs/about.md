@@ -1,5 +1,9 @@
 # 关于
 
+[//]: # (TODO Java 23)
+
+本书参考了 [JLS 22](https://docs.oracle.com/javase/specs/jls/se22/html/index.html)。
+
 作者的博客：<https://squid233.github.io>
 
 欢迎加入 QQ 群，一起讨论 Java 开发以及其他开发：

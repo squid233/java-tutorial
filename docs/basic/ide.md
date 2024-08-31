@@ -6,15 +6,9 @@
 
 安装完成后，我们就能启动 IDE 了。
 
-<figure>
-<img src="../img/ij.png" alt="intellij-idea-start">
-<figcaption>IntelliJ IDEA 启动界面</figcaption>
-</figure>
+![intellij-idea-launch](img/ij.png)
 
-<figure>
-<img src="../img/ij_main.png" alt="intellij-idea-main">
-<figcaption>安装了插件的 IntelliJ IDEA 主界面</figcaption>
-</figure>
+![intellij-idea-main-menu](img/ij_main.png)
 
 在左方的“Plugins”处可搜索并下载中文语言包。
 
@@ -32,7 +26,7 @@
 
 ## 设置预览功能
 
-我们将在本书中使用预览功能。在右上角找到齿轮，打开`Project Structure`，设置`Language Level`为`22 (Preview)`。
+我们将在本书中使用预览功能。在右上角找到齿轮，打开`Project Structure`，设置`Language level`为`23 (Preview)`。
 
 ## 自动补全
 

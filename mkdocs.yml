@@ -12,20 +12,31 @@ nav:
     - basic/index.md
     - basic/setup.md
     - basic/jshell.md
+    - basic/datatype.md
     - 表达式:
-        - basic/exp/integer.md
-        - basic/exp/floating_point.md
-        - basic/exp/string.md
-        - basic/exp/boolean.md
+      - basic/exp/literal.md
+      - basic/exp/basic_operation.md
+      - basic/exp/logic_operation.md
+      - basic/exp/bit_operation.md
+      - basic/exp/string_concat.md
+      - basic/exp/cast.md
+    - basic/identifier_keyword.md
     - basic/variable.md
     - basic/array.md
+    - basic/block_statement.md
     - basic/method.md
     - basic/ide.md
     - basic/source_file.md
     - basic/control_flow.md
     - basic/summary.md
+  - 第二章：面向对象:
+    - object/index.md
+    - object/class.md
   - 附录:
     - 关于: about.md
+
+draft_docs: |
+  object/class.md
 
 validation:
   omitted_files: warn

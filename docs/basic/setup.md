@@ -1,13 +1,11 @@
 # 配置环境
 
-[//]: # (TODO：Replace with Java 23)
-
 在开始前，我们先理清以下概念：
 
-- Java：Java 编程语言。由 [JLS（Java Language Specification）](https://docs.oracle.com/javase/specs/jls/se22/html/) 定义。
+- Java：Java 编程语言。由 [JLS（Java Language Specification）](https://docs.oracle.com/javase/specs/jls/se23/html/) 定义。
     - Java 源文件：使用 Java 编写的文件，后缀名是`.java`。
 - JVM：Java 虚拟机（Java Virtual Machine），可运行字节码文件。
-    - 字节码：[JVM Specification（Java Virtual Machine Specification）](https://docs.oracle.com/javase/specs/jvms/se22/html/)
+    - 字节码：[JVM Specification（Java Virtual Machine Specification）](https://docs.oracle.com/javase/specs/jvms/se23/html/)
       规定的一系列指令，用单个或多个字节（Byte）表示。
 - JDK：Java 开发包（Java Development Kit），包含 Java 的编译器和运行时。
     - 编译器：把 Java 源文件转换为字节码文件，后缀名是`.class`。

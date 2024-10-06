@@ -10,11 +10,11 @@
 
 ![intellij-idea-main-menu](img/ij_main.png)
 
-在左方的“Plugins”处可搜索并下载中文语言包。
+上图是安装了主题插件的 IntelliJ IDEA 的主界面。在左方的“Plugins”处可搜索并下载中文语言包。
 
 ## 创建项目
 
-点击主界面上方的`New Project`创建新项目。给项目取一个名字并设置 JDK。
+点击主界面上方的`New Project`创建新项目。给项目取一个名字并设置 JDK。（请无视图中的 JDK 22）
 
 ![new-project](img/new_project.png)
 

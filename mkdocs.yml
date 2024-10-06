@@ -21,9 +21,9 @@ nav:
       - basic/exp/string_concat.md
       - basic/exp/cast.md
     - basic/identifier_keyword.md
+    - basic/block_statement.md
     - basic/variable.md
     - basic/array.md
-    - basic/block_statement.md
     - basic/method.md
     - basic/ide.md
     - basic/source_file.md
@@ -31,11 +31,13 @@ nav:
     - basic/summary.md
   - 第二章：面向对象:
     - object/index.md
+    - object/intro.md
     - object/class.md
   - 附录:
     - 关于: about.md
 
 draft_docs: |
+  object/intro.md
   object/class.md
 
 validation:

@@ -21,9 +21,7 @@ void main() {
 }
 ```
 
-这时调用主方法没有任何意义，因为它创建的`s`变量不会自动输出。要在终端显示我们想要的内容，就需要使用`println`方法。
-
-`println`允许输出参数并自动换行；类似地，`print`允许输出参数且不换行。
+这时调用主方法没有任何意义，因为它创建的`s`变量不会自动输出。要在终端显示我们想要的内容，就需要使用我们先前学过的`IO.println`或`IO.print`方法。`IO.`前缀可以省略。
 
 ```java
 void main() {
@@ -40,9 +38,16 @@ void main() {
 
 右上角会多出一个配置，我们点击三角形就能运行。
 
-[//]: # (## 输入内容)
+## 输入内容
 
-[//]: # (TODO)
+除了输出以外，我们也可以通过`readln(提示词)`从控制台获取输入的内容，其类型为`String`字符串。
+
+```java
+void main() {
+    var name = readln("What's your name? My name is ");
+    println("Your name is: " + name);
+}
+```
 
 ## 程序参数
 
@@ -50,11 +55,11 @@ void main() {
 
 ```java
 void main(String[] args) {
-    System.out.println("Hello " + args[0]);
+    println("Hello " + args[0]);
 }
 ```
 
-这时，我们需要点击右上角的`HelloWorld`，选择`Edit Configurations...`，并在`Program arguments`中填入我们需要的参数。有空格需要用半角双引号包围。完成后运行即可。
+这时，我们需要点击右上角的`HelloWorld`，选择`Edit Configurations...`，并在`Program arguments`中填入我们需要的参数。有空格的参数需要用半角双引号包围。完成后运行即可。
 
 ## 全局变量
 
@@ -69,7 +74,7 @@ void greet() {
 
 void main() {
     greet();
-    System.out.println(s);
+    println(s);
 }
 ```
 
@@ -82,6 +87,6 @@ void main() {
     // 行注释
     /* 块注释
      * 换行 */
-    System.out.println("Hello world");
+    println("Hello world");
 }
 ```

@@ -2,7 +2,7 @@
 
 为了加强程序的功能，我们需要进行流程控制（Control flow）。
 
-## 条件
+## 条件：`if`语句
 
 `if`语句允许当指定的布尔值为`true`时执行块中的语句，如果不为`true`且有`else`块则跳到`else`。
 
@@ -28,7 +28,7 @@ void main() {
 
 ```java
 void main(String[] args) {
-    System.out.println(
+    println(
         (args.length > 0 && "human".equals(args[0])) ?
         "You are human" :
         "You are not human"
@@ -38,7 +38,7 @@ void main(String[] args) {
 
 不建议嵌套三元运算符，若嵌套过多会导致程序极难阅读，此时应替换成`if`语句。
 
-## 选择
+## 选择：`switch`表达式/语句
 
 当我们需要在多个数中选择一个时，`if`链会变得极长。这时，`switch`表达式就非常合适。
 
@@ -55,21 +55,21 @@ void main(String[] args) {
 ```java
 void main(String[] args) {
     switch (args.length) {
-        case 0 -> System.out.println("No argument");
+        case 0 -> println("No argument");
         default -> {
             switch (args[0]) {
                 case "human" -> {
-                    System.out.println("You are human");
+                    println("You are human");
                     var bool = switch (args[1]) {
                         case "yes" -> true;
                         case null, default -> {
-                            System.out.println("Fallback to false");
+                            println("Fallback to false");
                             yield false;
                         }
                     };
                 }
-                case null -> System.out.println("You are unknown");
-                default -> System.out.println("You are not human");
+                case null -> println("You are unknown");
+                default -> println("You are not human");
             }
         }
     }
@@ -82,7 +82,7 @@ void main(String[] args) {
 ```java
 int i = switch (0) {
     default -> {
-        System.out.println("created i");
+        println("created i");
         yield 42;
     }
 };
@@ -120,12 +120,12 @@ void main() {
 ```java
 void main(String[] args) {
     for (int i = 0; i < args.length; i++) {
-        System.out.println(args[i]);
+        println(args[i]);
     }
     // 等效于：
     int i = 0;
     while (i < args.length) {
-        System.out.println(args[i]);
+        println(args[i]);
         i++;
     }
 }
@@ -155,7 +155,7 @@ long sum(long i, long n) {
 ```java
 void main(String[] args) {
     for (var s : args) {
-        System.out.println(s);
+        println(s);
     }
 }
 ```
@@ -168,7 +168,7 @@ void main(String[] args) {
 
 在循环块内调用`break`语句可退出循环。
 
-注意`continue`和`break`只能用于跳过或退出离以上语句最近的循环。若要跳过或退出外部循环则需要使用标签。
+注意`continue`和`break`只能用于跳过或退出离上述两个语句最近的循环。若要跳过或退出外部循环则需要使用标签。
 
 ## 标签
 
@@ -187,7 +187,7 @@ void main(String[] args) {
             if ("exit".equals(s)) {
                 break loop;
             }
-            System.out.println(i);
+            println(i);
         }
     }
 }
@@ -199,7 +199,7 @@ void main(String[] args) {
 void main(String[] args) {
     https://squid233.github.io/java-tutorial/basic/control_flow/
     if (args.length > 0 && "human".equals(args[0])) {
-        System.out.println("You are human");
+        println("You are human");
     }
 }
 ```

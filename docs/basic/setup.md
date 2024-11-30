@@ -11,15 +11,17 @@
     - 编译器：把 Java 源文件转换为字节码文件，后缀名是`.class`。
 - JRE：Java 运行时环境（Java Runtime Environment），现已不可单独下载，可用`jlink`程序自行制作。
 
-Java 与 JVM 无直接关系。JVM 能运行任何规范的字节码文件。
+Java 与 JVM 没有直接关系。JVM 能运行任何符合规范的字节码文件。
 
-本书重点讲解 **Java 编程语言**，其他不作赘述。
+本书重点讲解 **Java 编程语言**，其他内容不过多说明。
 
 ## 下载 JDK
 
-JDK 根据供应商不同分为 Oracle JDK 和 OpenJDK，由 Oracle 发布的称为 Oracle JDK；其他供应商则基于 OpenJDK 开发了自己的版本。
+为了编译 Java 文件，我们需要下载 JDK。
 
-不同供应商发布的 JDK 可在 [SDKMAN!](https://sdkman.io/jdks) 找到。
+世界上一些公司和组织根据 OpenJDK 开发出了自己版本的 JDK，我们把这些公司和组织称为供应商。
+
+不同供应商发布的 JDK 可在 [SDKMAN!](https://sdkman.io/jdks) 找到，可以根据自己喜好下载，本书不作推荐。
 
 ## 环境变量
 

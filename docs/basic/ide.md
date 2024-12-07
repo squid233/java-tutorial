@@ -34,7 +34,7 @@ comments: true
 
 ## 自动补全
 
-自动补全是 IDE 中最重要的功能。IntelliJ IDEA 支持自动补全，输入标识符中各单词（的首字母）会显示多个候选项。按`Enter`插入候选项，按`Tab`替换为候选项。
+自动补全是 IDE 中最重要的功能。IntelliJ IDEA 支持自动补全，输入标识符中各单词（的首字母）或者按++ctrl+space++会显示多个候选项。按++enter++插入候选项，按++tab++替换为候选项。
 
 ![auto-completion](img/auto_completion.png)
 

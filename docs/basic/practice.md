@@ -6,7 +6,7 @@ comments: true
 
 ## 身体质量指数
 
-身体质量指数（BMI）是国际上常用的衡量人体胖瘦程度以及是否健康的一个标准。编写一个程序，读取用户输入、计算 BMI 的值并按下表输出其值（允许精度误差）和类别：
+身体质量指数（BMI）是国际上常用的衡量人体胖瘦程度以及是否健康的一个标准。编写一个程序，读取用户输入，计算 BMI 的值并按下表输出其值（允许精度误差）和类别：
 
 | 类别  | 范围          |
 |-----|-------------|
@@ -62,6 +62,49 @@ void main() {
     }
     println("BMI: " + bmi);
     println("类别：" + type);
+}
+```
+///
+
+## 购物车（基础版）
+
+某人要购买$n$个物品。现给以下物品标上序号：
+
+1. 水
+2. 面包
+3. 书本
+
+请你编写一个程序，读取用户输入的$n$个序号并逐个输出其对应的名称，没有编号的输出`未知`。要求使用到数组的遍历。
+
+/// admonition | 提示
+    type: tip
+使用`Integer.parseInt(s)`来把字符串`s`转为`#!java int`。
+///
+
+/// details | 额外提示
+    type: tip
+1. 使用循环语句。
+2. 使用`#!java switch`语句。
+3. 不一定要把物品的序号转为`#!java int`。
+///
+
+/// details | 参考答案
+    type: example
+```java
+void main() {
+    int n = Integer.parseInt(readln("物品数："));
+    String[] items = new String[n];
+    for (int i = 0; i < n; i++) {
+        items[i] = readln("序号：");
+    }
+    for (String item : items) {
+        println(switch (item) {
+            case "1" -> "水";
+            case "2" -> "面包";
+            case "3" -> "书本";
+            default -> "未知";
+        });
+    }
 }
 ```
 ///

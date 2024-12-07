@@ -46,6 +46,8 @@ void main() {
 
 除了输出以外，我们也可以通过`readln(提示词)`从控制台获取输入的内容，其类型为`String`。
 
+[//]: # (TODO JDK 24 IO::readln without argument)
+
 ```java
 void main() {
     var name = readln("What's your name? My name is: ");

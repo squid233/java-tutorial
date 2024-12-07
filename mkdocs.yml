@@ -10,34 +10,38 @@ copyright: Copyright © 2024 squid233. Licensed under <a href="https://creativec
 nav:
   - 前言: index.md
   - 第一章：基础知识:
-    - basic/index.md
-    - basic/setup.md
-    - basic/jshell.md
-    - basic/datatype.md
-    - 表达式:
-      - basic/exp/literal.md
-      - basic/exp/basic_operation.md
-      - basic/exp/logic_operation.md
-      - basic/exp/bit_operation.md
-      - basic/exp/string_concat.md
-      - basic/exp/cast.md
-    - basic/variable.md
-    - basic/array.md
-    - basic/method.md
-    - basic/ide.md
-    - basic/source_file.md
-    - basic/control_flow.md
-    - basic/summary.md
+      - basic/index.md
+      - basic/setup.md
+      - basic/jshell.md
+      - basic/datatype.md
+      - 表达式:
+          - basic/exp/literal.md
+          - basic/exp/basic_operation.md
+          - basic/exp/logic_operation.md
+          - basic/exp/bit_operation.md
+          - basic/exp/string_concat.md
+          - basic/exp/cast.md
+      - basic/variable.md
+      - basic/array.md
+      - basic/method.md
+      - basic/ide.md
+      - basic/source_file.md
+      - basic/control_flow.md
+      - 流程控制:
+          - basic/control_flow/condition.md
+      - basic/summary.md
+      - basic/practice.md
   - 第二章：面向对象:
-    - object/index.md
-    - object/intro.md
-    - object/class.md
+      - object/index.md
+      - object/intro.md
+      - object/class.md
   - 附录:
-    - 关于: about.md
+      - 关于: about.md
 
 draft_docs: |
   object/intro.md
   object/class.md
+  basic/control_flow/condition.md
 
 validation:
   omitted_files: warn

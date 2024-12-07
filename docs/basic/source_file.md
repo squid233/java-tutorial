@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 源文件
 
 先在`src`文件夹下创建一个空文件（`New -> File`），取名为`HelloWorld.java`。不要创建`Java Class`，我们暂时用不到它。

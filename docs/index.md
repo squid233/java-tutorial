@@ -2,16 +2,10 @@
 
 **欢迎阅读本书！**
 
-Java 编程语言是通用的、并发的、基于类的面向对象语言。<sup>[1]</sup> 本书将教你学会 Java 的基本语法和功能。
+Java 编程语言是通用的、并发的、基于类的面向对象语言。[^1] 本书将教你学会 Java 的基本语法和功能。
 
 本书尚未完成，敬请期待。
 
 本书使用 Java 23。
 
-[1]: https://docs.oracle.com/javase/specs/jls/se23/html/jls-1.html
-
-<div style="font-size: small">
-<ol>
-<li>JLS 23</li>
-</ol>
-</div>
+[^1]: [JLS 23](https://docs.oracle.com/javase/specs/jls/se23/html/jls-1.html)

@@ -1,6 +1,7 @@
 site_name: Java 循序渐进
 site_url: https://squid233.github.io/java-tutorial/
 repo_url: https://github.com/squid233/java-tutorial/
+repo_name: squid233/java-tutorial
 edit_uri: blob/main/docs/
 site_description: 本书将教你学会 Java 的基本语法和功能。
 site_author: squid233
@@ -20,8 +21,6 @@ nav:
       - basic/exp/bit_operation.md
       - basic/exp/string_concat.md
       - basic/exp/cast.md
-    - basic/identifier_keyword.md
-    - basic/block_statement.md
     - basic/variable.md
     - basic/array.md
     - basic/method.md
@@ -47,12 +46,44 @@ validation:
   anchors: warn
 
 theme:
-  name: readthedocs
-  locale: zh_CN
-  custom_dir: custom_theme/
+  name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.footer
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+  custom_dir: overrides
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 extra_css:
   - css/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 markdown_extensions:
   - toc:
@@ -60,7 +91,14 @@ markdown_extensions:
       slugify: !!python/name:markdown.extensions.toc.slugify_unicode
   - pymdownx.blocks.admonition
   - pymdownx.blocks.details
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.tilde
-
-watch:
-  - custom_theme
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 强制转换
 
 `(T) 表达式`可将表达式的类型强制转换（Cast）为类型`T`。注意：若转换后类型不兼容，运行时会抛出`ClassCastException`异常。

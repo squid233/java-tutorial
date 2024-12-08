@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 逻辑运算
 
 逻辑运算是指对若干个表达式进行判断从而得到一个布尔值的运算。
@@ -47,7 +51,3 @@ jshell> true | (0 / 0) == 0
 |  异常错误 java.lang.ArithmeticException：/ by zero
 |        at (#1:1)
 ```
-
-## 条件操作符
-
-条件操作符的语法为`条件 ? A : B`，其要求三个表达式，属于三元表达式（Ternary operator expression）或条件表达式（Conditional expression）。当条件为真时结果为`A`，否则为`B`。

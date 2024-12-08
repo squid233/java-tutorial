@@ -97,6 +97,27 @@ int f(int... args);
 int g() { return f(1, 2, 3); }
 ```
 
+## 练习
+
+用本节所学内容表示出本节开头所提到的场景。
+
+/// details | 参考答案
+    type: example
+```java
+void eat() {}
+void drink() {}
+void work() {}
+void sleep() {}
+
+void live() {
+    eat();
+    drink();
+    work();
+    sleep();
+}
+```
+///
+
 ---
 
 JShell 的使用到此为止。之后的章节中我们将在源文件中编写代码。

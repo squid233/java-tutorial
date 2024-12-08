@@ -112,3 +112,16 @@ $1 ==> 2
 jshell> "result = " + $1
 $2 ==> "result = 2"
 ```
+
+## 练习
+
+用本节所学内容表示出本节开头所提到的场景。
+
+/// details | 参考答案
+    type: example
+```java
+int personCount = 10;
+personCount += 5;
+personCount--;
+```
+///

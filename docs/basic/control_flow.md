@@ -1,42 +1,4 @@
-# 流程控制
-
-为了加强程序的功能，我们需要进行流程控制（Control flow）。
-
-## 条件：`if`语句
-
-`if`语句允许当指定的布尔值为`true`时执行块中的语句，如果不为`true`且有`else`块则跳到`else`。
-
-```java
-void main() {
-    if (condition1) {
-        statement1;
-    } else if (condition2) {
-        statement2;
-    } else {
-        statement3;
-    }
-}
-```
-
-上面的代码是顺序执行的，满足`condition1`则执行`statement1`，如果不满足，检查是否满足`condition2`，是则执行`statement2`，否则执行`statement3`。
-
-`if`语句能嵌套，提供我们编写复杂程序的基础。
-
-### 三元运算符
-
-有时我们需要按条件返回表达式，这时可用三元运算符。三元运算符的格式是`condition ? expression1 : expression2`。
-
-```java
-void main(String[] args) {
-    println(
-        (args.length > 0 && "human".equals(args[0])) ?
-        "You are human" :
-        "You are not human"
-    );
-}
-```
-
-不建议嵌套三元运算符，若嵌套过多会导致程序极难阅读，此时应替换成`if`语句。
+# 流程控制（废稿留存）
 
 ## 选择：`switch`表达式/语句
 

@@ -26,9 +26,11 @@ nav:
       - basic/method.md
       - basic/ide.md
       - basic/source_file.md
-      - basic/control_flow.md
       - 流程控制:
           - basic/control_flow/condition.md
+          - basic/control_flow/switch.md
+          - basic/control_flow/loop.md
+      - basic/control_flow.md
       - basic/summary.md
       - basic/practice.md
   - 第二章：面向对象:
@@ -41,7 +43,8 @@ nav:
 draft_docs: |
   object/intro.md
   object/class.md
-  basic/control_flow/condition.md
+  basic/control_flow/switch.md
+  basic/control_flow/loop.md
 
 validation:
   omitted_files: warn

@@ -4,7 +4,7 @@
 
 ## 主方法
 
-所有的 Java 程序都有主方法。主方法即名称为`main`、类型为`#!java void`的方法。
+Java 程序首先执行主方法。主方法即名称为`main`、类型为`#!java void`的方法。
 
 ```java
 void main() {

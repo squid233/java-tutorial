@@ -1,7 +1,3 @@
----
-comments: true
----
-
 # JShell
 
 Java 9 中加入了 JShell，无需 Java 源文件就能直接运行代码片段。

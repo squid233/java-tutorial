@@ -1,7 +1,3 @@
----
-comments: true
----
-
 # 字面量
 
 在 Java 中，所有原始类型、字符串和空类型都可在源代码中用字面量表示。
@@ -19,7 +15,7 @@ Java 允许在整数中的两个数字之间添加多个下划线。
 整数字面量的原始类型为`int`，若添加`L`或`l`后缀则为`long`。小写`l`容易与数字`1`混淆，所以建议使用大写`L`。
 
 /// admonition | JLS 提供的整数实例
-    type: tip
+    type: example
 ```java
 int
 0    2    0372    0xDada_Cafe    1996    0x00_FF__00_FF
@@ -39,7 +35,7 @@ Java 允许在浮点数中整数、小数、指数部分的两个数字之间添
 浮点数的后缀可选，`f`和`F`后缀表示`float`类型，`d`、`D`或不加后缀表示`double`类型。
 
 /// admonition | JLS 提供的浮点数实例
-    type: tip
+    type: example
 ```java
 float
 1e1f    2.f    .3f    0f    3.14f    6.022137e+23f

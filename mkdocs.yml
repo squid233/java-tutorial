@@ -20,7 +20,6 @@ nav:
           - basic/exp/logic_operation.md
           - basic/exp/bit_operation.md
           - basic/exp/string_concat.md
-          - basic/exp/cast.md
       - basic/variable.md
       - basic/array.md
       - basic/method.md
@@ -30,12 +29,10 @@ nav:
           - basic/control_flow/condition.md
           - basic/control_flow/switch.md
           - basic/control_flow/loop.md
-      - basic/control_flow.md
       - basic/summary.md
       - basic/practice.md
   - 第二章：面向对象:
       - object/index.md
-      - object/intro.md
       - object/class.md
   - 附录:
       - 关于: about.md
@@ -43,8 +40,6 @@ nav:
 draft_docs: |
   object/intro.md
   object/class.md
-  basic/control_flow/switch.md
-  basic/control_flow/loop.md
 
 validation:
   omitted_files: warn
@@ -58,19 +53,19 @@ theme:
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
-        name: Switch to light mode
+        name: 切换到浅色模式
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: 切换到深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: 切换到系统偏好
   language: zh
   features:
     - navigation.instant
@@ -82,7 +77,6 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
-  custom_dir: overrides
 
 extra_javascript:
   - javascripts/katex.js
@@ -109,4 +103,8 @@ markdown_extensions:
   - pymdownx.highlight:
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

@@ -1,7 +1,3 @@
----
-comments: true
----
-
 # IDE
 
 在编写源文件前，我们需要下载 IDE。IDE（集成开发环境，Integrated development environment）集成了编辑、编译、运行等功能，能方便我们编程。

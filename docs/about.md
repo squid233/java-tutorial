@@ -1,6 +1,6 @@
 # 关于
 
-本书参考了 [JLS 23](https://docs.oracle.com/javase/specs/jls/se23/html/index.html)。
+本书参考了 [JLS 24](https://docs.oracle.com/javase/specs/jls/se24/html/index.html)。
 
 作者的博客：<https://squid233.github.io>
 

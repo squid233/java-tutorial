@@ -43,7 +43,7 @@ double cube(double a) {
 
 无返回值的方法内运算的结果不会自动输出。调用`IO.println(消息)`能输出消息并换行，`IO.print(消息)`则不换行。
 
-在 Java 23 中需要启用预览功能。
+在 Java 24 中需要启用预览功能。
 
 ```
 jshell> /env --enable-preview

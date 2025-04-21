@@ -26,7 +26,7 @@
 
 ## 设置预览功能
 
-我们将在本书中使用预览功能。在右上角找到齿轮，打开`Project Structure`，设置`Language level`为`23 (Preview)`。
+我们将在本书中使用预览功能。在右上角找到齿轮，打开`Project Structure`，设置`Language level`为`24 (Preview)`。
 
 ## 自动补全
 

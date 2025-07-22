@@ -21,12 +21,12 @@ void main() {
 }
 ```
 
-这时调用主方法没有任何意义，因为它创建的`s`变量不会自动输出。要在终端显示我们想要的内容，就需要使用我们先前学过的`IO.println`或`IO.print`方法。不在类中定义的方法里`IO.`前缀可以省略。
+这时调用主方法没有任何意义，因为它创建的`s`变量不会自动输出。要在终端显示我们想要的内容，就需要使用我们先前学过的`IO.println`或`IO.print`方法。
 
 ```java
 void main() {
     String s = "Hello world";
-    println(s);
+    IO.println(s);
 }
 ```
 
@@ -40,14 +40,12 @@ void main() {
 
 ## 输入内容
 
-除了输出以外，我们也可以通过`readln(提示词)`从控制台获取输入的内容，其类型为`String`。
-
-[//]: # (TODO JDK 24 IO::readln without argument)
+除了输出以外，我们也可以通过`IO.readln()`或`IO.readln(提示词)`从控制台获取输入的内容，其类型为`String`。
 
 ```java
 void main() {
-    var name = readln("What's your name? My name is: ");
-    println("Your name is: " + name);
+    var name = IO.readln("What's your name? My name is: ");
+    IO.println("Your name is: " + name);
 }
 ```
 
@@ -57,7 +55,7 @@ void main() {
 
 ```java
 void main(String[] args) {
-    println("Hello " + args[0]);
+    IO.println("Hello " + args[0]);
 }
 ```
 
@@ -76,7 +74,7 @@ void greet() {
 
 void main() {
     greet();
-    println(s);
+    IO.println(s);
 }
 ```
 
@@ -89,6 +87,6 @@ void main() {
     // 行注释
     /* 块注释
      * 换行 */
-    println("Hello world");
+    IO.println("Hello world");
 }
 ```

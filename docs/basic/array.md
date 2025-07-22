@@ -22,17 +22,15 @@ int age4 = 28;
 
 创建数组和创建变量使用的语句相同，区别在于数组的类型为`组件类型[]`。
 
-$$
-\begin{align}
-C[] \space a &= {\rm new} \space C[l];\\
-C[] \space a &= {\rm new} \space C[]\{v_0,\space v_1, \space..., \space v_{l-1}\};\\
-C[] \space a &= \{v_0, \space v_1, \space..., \space v_{l-1}\};
-\end{align}
-$$
+```java
+C[] a = new C[l];                      // (1)
+C[] a = new C[]{v_0, v_1, ..., v_l-1}; // (2)
+C[] a = {v_0, v_1, ..., v_l-1};        // (3)
+```
 
-上述语句中，$C$为组件类型，$l$为数组的长度，$v_n$为第$n$个组件的初始值。
+上述语句中，`C`为组件类型，`l`为数组的长度，`v_n`为第`n`个组件的初始值。
 
-在$(2)(3)$式中，数组$a$的长度会由 Java 自动确定。数组一经创建，其长度就不可改变。
+在(2)(3)式中，数组`a`的长度会由 Java 自动确定。数组一经创建，其长度就不可改变。
 
 ## 访问组件
 
@@ -40,14 +38,14 @@ $$
 
 获取数组的组件需要用访问语句
 
-$$
-C \space c = a[i];
-$$
+```java
+C c = a[i];
+```
 
-其中$i$称为索引（Index），${\rm int} \space i \in [0,l)$。索引从`0`开始，即第1个组件索引为0，第2个组件索引为1，以此类推。
+其中`i`为数组的索引（Index），且满足`i >= 0 && i < l`。索引从`0`开始，即第1个组件索引为0，第2个组件索引为1，以此类推。
 
 ## 边界
 
 数组的长度通过`.length`获取，其类型为`#!java int`，如`c.length`。
 
-如果索引小于0或大于等于数组的长度，则会抛出`ArrayIndexOutOfBoundsException`异常。
+如果索引小于0或大于等于数组的长度，JVM 会抛出`ArrayIndexOutOfBoundsException`异常。

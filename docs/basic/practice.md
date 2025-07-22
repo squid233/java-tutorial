@@ -43,8 +43,8 @@ $$
     type: example
 ```java
 void main() {
-    double h = Double.parseDouble(readln("身高（m）："));
-    double w = Double.parseDouble(readln("体重（kg）："));
+    double h = Double.parseDouble(IO.readln("身高（m）："));
+    double w = Double.parseDouble(IO.readln("体重（kg）："));
     double bmi = w / (h * h);
     String type;
     if (bmi < 18.5) {
@@ -56,8 +56,8 @@ void main() {
     } else {
         type = "肥胖";
     }
-    println("BMI: " + bmi);
-    println("类别：" + type);
+    IO.println("BMI: " + bmi);
+    IO.println("类别：" + type);
 }
 ```
 ///
@@ -88,13 +88,13 @@ void main() {
     type: example
 ```java
 void main() {
-    int n = Integer.parseInt(readln("物品数："));
+    int n = Integer.parseInt(IO.readln("物品数："));
     String[] items = new String[n];
     for (int i = 0; i < n; i++) {
-        items[i] = readln("序号：");
+        items[i] = IO.readln("序号：");
     }
     for (String item : items) {
-        println(switch (item) {
+        IO.println(switch (item) {
             case "1" -> "水";
             case "2" -> "面包";
             case "3" -> "书本";

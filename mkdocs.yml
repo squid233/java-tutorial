@@ -5,7 +5,7 @@ repo_name: squid233/java-tutorial
 edit_uri: blob/main/docs/
 site_description: 本书将教你学会 Java 的基本语法和功能。
 site_author: squid233
-copyright: Copyright © 2024 squid233. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noreferrer noopener">CC BY-NC-SA 4.0</a>.
+copyright: Copyright © 2024-2025 squid233. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noreferrer noopener" style="text-decoration:underline;">CC BY-NC-SA 4.0</a>.
 
 nav:
   - 前言: index.md
@@ -13,9 +13,14 @@ nav:
       - basic/index.md
       - basic/setup.md
       - basic/jshell.md
-      - basic/datatype.md
+      - basic/literal.md
+      - 数据类型:
+          - basic/datatype/integer.md
+          - basic/datatype/char.md
+          - basic/datatype/floating_point.md
+          - basic/datatype/boolean.md
+          - basic/datatype/string.md
       - 表达式:
-          - basic/exp/literal.md
           - basic/exp/basic_operation.md
           - basic/exp/logic_operation.md
           - basic/exp/bit_operation.md

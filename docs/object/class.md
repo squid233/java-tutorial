@@ -35,7 +35,7 @@ public class Dog {
 2. 对于接口的成员，没有关键字修饰则为`#!java public`。
 </div>
 
-需要注意的是，顶部类（即直接声明在源文件中的类）不能用`#!java protected`或`#!java private`修饰。用`#!java public`修饰的顶部类，文件名和类名必须一致。
+需要注意的是，顶层类（即直接声明在源文件中的类）不能用`#!java protected`或`#!java private`修饰。用`#!java public`修饰的顶层类，文件名和类名必须一致。
 
 ## 实例成员
 
@@ -124,6 +124,11 @@ public class Main {
 
 此外，输入`sout`，IntelliJ IDEA 可以自动补全为`System.out.println`。
 
+/// admonition | 为什么不用`IO.println`？
+    type: question
+个人习惯。
+///
+
 ## 导入
 
 ### 导入类
@@ -175,6 +180,8 @@ public class Main {
 public class Main {
     public static void main(String[] args) {
         Dog dog = new Dog("Dog A", 2);
+        // 或
+        var dog = new Dog("Dog A", 2);
     }
 }
 ```
@@ -186,7 +193,7 @@ public class Main {
     ```java
     public class Main {
         public static void main(String[] args) {
-            Dog dog = new Dog("Dog A", 2);
+            var dog = new Dog("Dog A", 2);
             dog.printInfo();
         }
     }
@@ -209,16 +216,31 @@ public class Main {
 
 Java 类中的方法参数不同时可以有相同的名称，称为重载（Overloads）。方法重载与返回类型无关，参数相同、返回类型不同的方法不能重载，编译器会报错。
 
-```java
-public class Dog {
-    // ...
+=== "Dog.java"
 
-    public void eat() {
-        System.out.println("Eat");
-    }
+    ```java
+    public class Dog {
+        // ...
     
-    public void eat(String food) {
-        System.out.println("Eat " + food);
+        public void eat() {
+            System.out.println("Eat");
+        }
+        
+        public void eat(String food) {
+            System.out.println("Eat " + food);
+        }
     }
-}
-```
+    ```
+
+=== "Main.java"
+
+    ```java
+    public class Main {
+        public static void main(String[] args) {
+            var dog = new Dog("Dog A", 2);
+            dog.eat();
+            dog.eat("dog food");
+        }
+    }
+    ```
+

@@ -10,40 +10,26 @@ copyright: Copyright © 2024-2025 squid233. Licensed under <a href="https://crea
 nav:
   - 前言: index.md
   - 第一章：基础知识:
-      - basic/index.md
-      - basic/setup.md
-      - basic/jshell.md
-      - basic/literal.md
-      - 数据类型:
-          - basic/datatype/integer.md
-          - basic/datatype/char.md
-          - basic/datatype/floating_point.md
-          - basic/datatype/boolean.md
-          - basic/datatype/string.md
-      - 表达式:
-          - basic/exp/basic_operation.md
-          - basic/exp/logic_operation.md
-          - basic/exp/bit_operation.md
-          - basic/exp/string_concat.md
-      - basic/variable.md
-      - basic/array.md
-      - basic/method.md
-      - basic/ide.md
-      - basic/source_file.md
-      - 流程控制:
-          - basic/control_flow/condition.md
-          - basic/control_flow/switch.md
-          - basic/control_flow/loop.md
-      - basic/summary.md
-      - basic/practice.md
+      - 01-basic/index.md
+      - 01-basic/01-setup.md
+      - 01-basic/02-jshell.md
+      - 01-basic/03-ide.md
+      - 01-basic/04-hello-world.md
+      - 01-basic/05-variable.md
+      - 01-basic/06-operator.md
+      - 01-basic/07-condition.md
+      - 01-basic/08-loop.md
+      - 01-basic/09-array.md
+      - 01-basic/10-method.md
   - 第二章：面向对象:
-      - object/index.md
-      - object/package.md
-      - object/class.md
+      - 02-object/index.md
+      - 02-object/package.md
+      - 02-object/class.md
   - 附录:
       - 关于: about.md
 
 draft_docs: |
+  02-object/*
 
 validation:
   omitted_files: warn

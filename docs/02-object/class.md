@@ -2,7 +2,7 @@
 
 **类**（Class）是 Java 中所有引用类型的基本单元。
 
-我们在[源文件](../basic/source_file.md)一节中曾用到没有类的源文件。本节，我们将创建第一个 Java 类。
+我们在源文件一节中曾用到没有类的源文件。本节，我们将创建第一个 Java 类。
 
 ## 创建类
 
@@ -102,7 +102,7 @@ public class Main {
 }
 ```
 
-上面代码声明的`main`方法就是[主方法](../basic/source_file.md#主方法)的完整形式，包括`#!java public`访问权限、`#!java static`修饰符、`#!java void`返回类型、`main`名称和一个`String[]`参数。
+上面代码声明的`main`方法就是主方法的完整形式，包括`#!java public`访问权限、`#!java static`修饰符、`#!java void`返回类型、`main`名称和一个`String[]`参数。
 
 ### 静态字段
 
@@ -174,7 +174,7 @@ public class Main {
 
 ## 创建实例
 
-我们在[数组](../basic/array.md)一节中其实已经创建过实例，只是本节我们创建的是类的实例。`#!java new`语句创建类的实例，并调用构造器：
+我们在[数组](../01-basic/09-array.md)一节中其实已经创建过实例，只是本节我们创建的是类的实例。`#!java new`语句创建类的实例，并调用构造器：
 
 ```java
 public class Main {
